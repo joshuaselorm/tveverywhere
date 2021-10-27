@@ -1,0 +1,170 @@
+<!doctype html>
+
+<html>
+
+<head>
+<title>login to TVeverywhere </title>
+
+<style>
+
+
+
+
+
+body  { font-family: Arial, Helvetica, sans-serif;
+  background-image: url("backgroundfive.jpg");
+  background-color: #cccccc;
+}
+
+
+
+
+
+
+
+form {border: 3px solid #f1f1f1; margin: 5% 30% 5% 30%; background-color: #213865}
+
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: #04AA6D;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+.cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #f44336;
+}
+
+.imgcontainer {
+  text-align: center;
+  margin: 45px 0 12px 0;
+}
+
+img.avatar {
+  width: 40%;
+  border-radius: 50%;
+}
+
+.container {
+  padding: 16px;
+}
+
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+
+
+
+
+/* If the browser window is 600px or smaller, the following will happen: */
+
+
+@media only screen and (max-width: 600px) {
+  body {
+    background-color: lightblue; 
+  }
+
+  form { margin: 0% 0% 0% 0%;}
+}
+
+
+
+
+
+</style>
+
+
+
+
+
+
+
+
+
+
+</head>
+
+
+
+
+<body>
+
+
+
+<form action="/action_page.php" method="post">
+    <div class="imgcontainer">
+        <img src="tv.jpeg" alt="Avatar" class="avatar">
+    </div>
+
+    <div class="container">
+        <label for="uname"><b>Username</b></label>
+        <input type="text" placeholder="Enter Username" name="uname" required>
+
+        <label for="psw"><b>Password</b></label>
+        <input type="password" placeholder="Enter Password" name="psw" required>
+
+        <button type="submit">Login</button>
+        <label>
+            <input type="checkbox" checked="checked" name="remember"> Remember me
+        </label>
+    </div>
+
+    <div class="container" style="background-color:#f1f1f1">
+        <button type="button" class="cancelbtn">Cancel</button>
+        <span class="psw">Forgot <a href="#">password?</a></span>
+    </div>
+</form>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+
+
+</html>
